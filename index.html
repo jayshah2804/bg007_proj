@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div className="mainDoc">
+        <React.Fragment>
+          <div id="dummy" className="asd">
+            
+              </div>
+           
+          </div>
+          <div className="container">
+            <div className="container inside">
+              <img src="pexels-photo-5560763.jpeg" alt="" className="logo" />
+              <h1 className="appName">Z A P</h1>
+              <button className="button signUp" onClick={signupClickedHandler}>
+                Sign up
+              </button>
+              <button className="button login" onClick={loginClickedHandler}>
+                Login
+              </button>
+              <p id="words">Cooking gone wrong?</p>
+              <p>Order food from favourite restaurants near you.</p>
+              <div id="spanText" onClick={inputDivClickedHandler}>
+                <input
+                  type="text"
+                  placeholder="Enter your pincode"
+                  className="inputPincode"
+                  onKeyUp={changePincodeHandler}
+                  onFocus={changeClassHandler}
+                  onChange={inputChangeHandler}
+                  id="inputField"
+                  autoComplete="off"
+                />
+                <span className="LocateMe" onClick={locateMeClickHandler}>
+                  <i
+                    className="fas fa-crosshairs"
+                    style="font-size: 13px; padding-right: 4px" 
+                  ></i>
+                  Locate Me
+                </span>
+              </div>
+              <button className="button findFoodButton" onClick={clickHandler}>
+                <i id="loadingButton"></i>
+                Find Food
+              </button>
+              <div id="postalResults" onClick={postalResultsClickedHandler}></div>
+              <p>POPULAR CITIES IN INDIA</p>
+              <p>
+                Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai
+                Pune & more.
+              </p>
+              <p className="feelHunger">Feel Hunger? Just <span style="color: #8a2b06">Zzzzap</span> it!</p>
+              <img src={frontImage} alt="" className="frontImage" />
+            </div>
+          </div>
+        </React.Fragment>
+        <!-- {/* <div className="jay"></div> */} -->
+      </div>
+</body>
+</html>
